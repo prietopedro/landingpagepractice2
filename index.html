@@ -5,468 +5,465 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,400;1,700&display=swap"
+        rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <h2>Blumbang<span><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <rect width="20" height="20" fill="url(#pattern0)" />
-                        <defs>
-                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                <use xlink:href="#image0_1_560" transform="scale(0.00625)" />
-                            </pattern>
-                            <image id="image0_1_560" width="160" height="160"
-                                xlink:href="data:image/png;base64,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" />
-                        </defs>
-                    </svg>
-                </span></h2>
-        </div>
-        <nav>
-            <svg class="close" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M16.5 0.25C13.2861 0.25 10.1443 1.20305 7.47199 2.98862C4.79969 4.77419 2.71689 7.31209 1.48697 10.2814C0.257041 13.2507 -0.0647633 16.518 0.562247 19.6702C1.18926 22.8224 2.73692 25.7179 5.00952 27.9905C7.28213 30.2631 10.1776 31.8108 13.3298 32.4378C16.482 33.0648 19.7493 32.743 22.7186 31.513C25.6879 30.2831 28.2258 28.2003 30.0114 25.528C31.797 22.8557 32.75 19.7139 32.75 16.5C32.75 14.366 32.3297 12.2529 31.5131 10.2814C30.6964 8.30985 29.4994 6.51847 27.9905 5.00952C26.4815 3.50056 24.6902 2.3036 22.7186 1.48696C20.7471 0.670319 18.634 0.25 16.5 0.25ZM20.9038 18.5963C21.0561 18.7473 21.177 18.927 21.2595 19.1251C21.342 19.3231 21.3844 19.5355 21.3844 19.75C21.3844 19.9645 21.342 20.1769 21.2595 20.3749C21.177 20.573 21.0561 20.7527 20.9038 20.9038C20.7527 21.0561 20.573 21.177 20.3749 21.2594C20.1769 21.3419 19.9645 21.3844 19.75 21.3844C19.5355 21.3844 19.3231 21.3419 19.1251 21.2594C18.927 21.177 18.7473 21.0561 18.5963 20.9038L16.5 18.7913L14.4038 20.9038C14.2527 21.0561 14.073 21.177 13.8749 21.2594C13.6769 21.3419 13.4645 21.3844 13.25 21.3844C13.0355 21.3844 12.8231 21.3419 12.6251 21.2594C12.427 21.177 12.2473 21.0561 12.0963 20.9038C11.9439 20.7527 11.8231 20.573 11.7406 20.3749C11.6581 20.1769 11.6156 19.9645 11.6156 19.75C11.6156 19.5355 11.6581 19.3231 11.7406 19.1251C11.8231 18.927 11.9439 18.7473 12.0963 18.5963L14.2088 16.5L12.0963 14.4038C11.7903 14.0978 11.6184 13.6827 11.6184 13.25C11.6184 12.8173 11.7903 12.4022 12.0963 12.0963C12.4023 11.7903 12.8173 11.6184 13.25 11.6184C13.6827 11.6184 14.0978 11.7903 14.4038 12.0963L16.5 14.2088L18.5963 12.0963C18.9023 11.7903 19.3173 11.6184 19.75 11.6184C20.1827 11.6184 20.5978 11.7903 20.9038 12.0963C21.2098 12.4022 21.3817 12.8173 21.3817 13.25C21.3817 13.6827 21.2098 14.0978 20.9038 14.4038L18.7913 16.5L20.9038 18.5963Z"
-                    fill="black" />
+    <div class="wrapper">
+        <header>
+            <h2 class="logo">Blumbang</h2>
+
+            <nav class="top-nav">
+                <svg class="close" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M16.5 0.25C13.2861 0.25 10.1443 1.20305 7.47199 2.98862C4.79969 4.77419 2.71689 7.31209 1.48697 10.2814C0.257041 13.2507 -0.0647633 16.518 0.562247 19.6702C1.18926 22.8224 2.73692 25.7179 5.00952 27.9905C7.28213 30.2631 10.1776 31.8108 13.3298 32.4378C16.482 33.0648 19.7493 32.743 22.7186 31.513C25.6879 30.2831 28.2258 28.2003 30.0114 25.528C31.797 22.8557 32.75 19.7139 32.75 16.5C32.75 14.366 32.3297 12.2529 31.5131 10.2814C30.6964 8.30985 29.4994 6.51847 27.9905 5.00952C26.4815 3.50056 24.6902 2.3036 22.7186 1.48696C20.7471 0.670319 18.634 0.25 16.5 0.25ZM20.9038 18.5963C21.0561 18.7473 21.177 18.927 21.2595 19.1251C21.342 19.3231 21.3844 19.5355 21.3844 19.75C21.3844 19.9645 21.342 20.1769 21.2595 20.3749C21.177 20.573 21.0561 20.7527 20.9038 20.9038C20.7527 21.0561 20.573 21.177 20.3749 21.2594C20.1769 21.3419 19.9645 21.3844 19.75 21.3844C19.5355 21.3844 19.3231 21.3419 19.1251 21.2594C18.927 21.177 18.7473 21.0561 18.5963 20.9038L16.5 18.7913L14.4038 20.9038C14.2527 21.0561 14.073 21.177 13.8749 21.2594C13.6769 21.3419 13.4645 21.3844 13.25 21.3844C13.0355 21.3844 12.8231 21.3419 12.6251 21.2594C12.427 21.177 12.2473 21.0561 12.0963 20.9038C11.9439 20.7527 11.8231 20.573 11.7406 20.3749C11.6581 20.1769 11.6156 19.9645 11.6156 19.75C11.6156 19.5355 11.6581 19.3231 11.7406 19.1251C11.8231 18.927 11.9439 18.7473 12.0963 18.5963L14.2088 16.5L12.0963 14.4038C11.7903 14.0978 11.6184 13.6827 11.6184 13.25C11.6184 12.8173 11.7903 12.4022 12.0963 12.0963C12.4023 11.7903 12.8173 11.6184 13.25 11.6184C13.6827 11.6184 14.0978 11.7903 14.4038 12.0963L16.5 14.2088L18.5963 12.0963C18.9023 11.7903 19.3173 11.6184 19.75 11.6184C20.1827 11.6184 20.5978 11.7903 20.9038 12.0963C21.2098 12.4022 21.3817 12.8173 21.3817 13.25C21.3817 13.6827 21.2098 14.0978 20.9038 14.4038L18.7913 16.5L20.9038 18.5963Z"
+                        fill="black" />
+                </svg>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">How it work</a></li>
+                    <li><a href="#">Marketplace</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+            <svg class="menu" viewBox="0 0 48 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 32H0V26.6667H24V32ZM48 18.6667H0V13.3333H48V18.6667ZM48 5.33333H24V0H48V5.33333Z"
+                    fill="white" />
             </svg>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">How it work</a></li>
-                <li><a href="#">Marketplace</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
-        </nav>
-        <svg class="menu" viewBox="0 0 48 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M24 32H0V26.6667H24V32ZM48 18.6667H0V13.3333H48V18.6667ZM48 5.33333H24V0H48V5.33333Z"
-                fill="white" />
-        </svg>
-    </header>
+        </header>
 
-    <section>
-        <div class="header">
-            <h1>Collect and Sell your awesome NFTs</h1>
-            <p>Welcome to the future, you can buy and sell awesome artwork to enjoy cool feature from us.</p>
-            <div>
-                <button>Explore Now</button>
-                <button>Create</button>
-            </div>
-            <div>
-                <div>
-                    <p>50k+</p>
-                    <p>Artwork</p>
+        <section class="header-wrapper">
+            <div class="header">
+                <h1>Collect and Sell your <span>awesome</span> NFTs</h1>
+                <p>Welcome to the future, you can buy and sell awesome artwork to enjoy cool feature from us.</p>
+                <div class="cta">
+                    <button class="main-button">Explore Now</button>
+                    <button class="secondary-button">Create</button>
                 </div>
-                <div>
-                    <p>100k+</p>
-                    <p>Auction</p>
-                </div>
-                <div>
-                    <p>10k+</p>
-                    <p>Creator</p>
-                </div>
-            </div>
-        </div>
-        <div class="cards">
-            <div class="card">
-                <div class="card-picture">
-                    <div class="card-picture-price">
-                        <p>2.0 eth</p>
-                        <p>2:22:40</p>
-                    </div>
-                </div>
-                <div class="card-footer">
-                    <p>Isomorphic Design</p>
-                    <p>Daendles Art</p>
+                <div class="header-footer">
                     <div>
-                        <div>
-                            <p>Total Bidders</p>
-                            <p>20 users</p>
-                        </div>
-                        <button>Place Bid</button>
+                        <p class="header-footer-title">50k+</p>
+                        <p>Artwork</p>
                     </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-picture">
-                    <div class="card-picture-price">
-                        <p>2.0 eth</p>
-                        <p>2:22:40</p>
-                    </div>
-                </div>
-                <div class="card-footer">
-                    <p>Isomorphic Design</p>
-                    <p>Daendles Art</p>
                     <div>
-                        <div>
-                            <p>Total Bidders</p>
-                            <p>20 users</p>
-                        </div>
-                        <button>Place Bid</button>
+                        <p class="header-footer-title">100k+</p>
+                        <p>Auction</p>
+                    </div>
+                    <div>
+                        <p class="header-footer-title">10k+</p>
+                        <p>Creator</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section>
-        <h3>How it works ?</h3>
-        <div>
-            <div>
-                <div>
-                    <svg viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M42.7733 22C47.9467 22 51 24.9769 51 30.0727H44.6533V30.1247C41.7078 30.1247 39.32 32.4527 39.32 35.3245C39.32 38.1963 41.7078 40.5243 44.6533 40.5243H51V40.9923C51 46.0231 47.9467 49 42.7733 49H29.2267C24.0533 49 21 46.0231 21 40.9923V30.0077C21 24.9769 24.0533 22 29.2267 22H42.7733ZM49.88 32.3086C50.4986 32.3086 51 32.7975 51 33.4006V37.1964C50.9928 37.7966 50.4956 38.2814 49.88 38.2884H44.7733C43.2822 38.308 41.9782 37.3126 41.64 35.8965C41.4706 35.0174 41.7084 34.1103 42.2896 33.4183C42.8708 32.7263 43.736 32.3201 44.6533 32.3086H49.88ZM45.3733 34.0636H44.88C44.5771 34.0601 44.2854 34.175 44.07 34.3826C43.8545 34.5902 43.7333 34.8732 43.7333 35.1685C43.7333 35.7881 44.2446 36.2923 44.88 36.2995H45.3733C46.0066 36.2995 46.52 35.7989 46.52 35.1815C46.52 34.5641 46.0066 34.0636 45.3733 34.0636ZM36.5733 27.8368H28.1067C27.4786 27.8367 26.9673 28.3294 26.96 28.9417C26.96 29.5613 27.4712 30.0656 28.1067 30.0727H36.5733C37.2066 30.0727 37.72 29.5722 37.72 28.9547C37.72 28.3373 37.2066 27.8368 36.5733 27.8368Z"
-                            fill="#FCFCFC" />
-                        <rect x="1" y="1" width="70" height="70" rx="35" stroke="url(#paint0_linear_1_421)"
-                            stroke-width="2" />
-                        <defs>
-                            <linearGradient id="paint0_linear_1_421" x1="36" y1="0" x2="36" y2="72"
-                                gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#3A3EA4" />
-                                <stop offset="0.539047" stop-color="#9042A7" />
-                                <stop offset="1" stop-color="#D843A9" />
-                            </linearGradient>
-                        </defs>
-                    </svg>
-                    <svg viewBox="0 0 165 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M1 25.2431C1 25.2431 49.7635 32.8916 85.025 26.6741C120.286 20.4565 163.493 1.59115 163.493 1.59115"
-                            stroke="#D9DBE1" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 6" />
-                    </svg>
+            <div class="cards">
+                <div class="card">
+                    <div class="card-picture">
+                        <div class="card-picture-price">
+                            <p>2.0 eth</p>
+                            <p>2:22:40</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>Isomorphic Design</p>
+                        <p>Daendles Art</p>
+                        <div>
+                            <div>
+                                <p>Total Bidders</p>
+                                <p>20 users</p>
+                            </div>
+                            <button>Place Bid</button>
+                        </div>
+                    </div>
                 </div>
-                <p>Set up your wallet</p>
-                <p>Once you've set up your wallet of choice.</p>
+                <div class="card">
+                    <div class="card-picture">
+                        <div class="card-picture-price">
+                            <p>2.0 eth</p>
+                            <p>2:22:40</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>Isomorphic Design</p>
+                        <p>Daendles Art</p>
+                        <div>
+                            <div>
+                                <p>Total Bidders</p>
+                                <p>20 users</p>
+                            </div>
+                            <button>Place Bid</button>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
+        <section>
+            <h3>How it works ?</h3>
             <div>
                 <div>
-                    <svg viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M40.3492 21.8333C44.1883 21.8333 47.2908 23.3491 47.3333 27.2025V48.7075C47.3333 48.9483 47.2767 49.1891 47.1633 49.4016C46.9792 49.7416 46.6675 49.9966 46.285 50.11C45.9167 50.2233 45.5058 50.1666 45.1658 49.9683L35.9858 45.3783L26.7917 49.9683C26.5806 50.0802 26.3383 50.1525 26.0975 50.1525C25.3042 50.1525 24.6667 49.5008 24.6667 48.7075V27.2025C24.6667 23.3491 27.7833 21.8333 31.6083 21.8333H40.3492ZM41.3125 30.39H30.645C30.0358 30.39 29.54 30.8858 29.54 31.5091C29.54 32.1311 30.0358 32.6283 30.645 32.6283H41.3125C41.9217 32.6283 42.4175 32.1311 42.4175 31.5091C42.4175 30.8858 41.9217 30.39 41.3125 30.39Z"
-                            fill="#FCFCFC" />
-                        <rect x="1" y="1" width="70" height="70" rx="35" stroke="url(#paint0_linear_1_431)"
-                            stroke-width="2" />
-                        <defs>
-                            <linearGradient id="paint0_linear_1_431" x1="15.5" y1="21" x2="55" y2="72"
-                                gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#3A41A4" />
-                                <stop offset="0.364583" stop-color="#8942A7" />
-                                <stop offset="1" stop-color="#D843A9" />
-                            </linearGradient>
-                        </defs>
+                    <div>
+                        <svg viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M42.7733 22C47.9467 22 51 24.9769 51 30.0727H44.6533V30.1247C41.7078 30.1247 39.32 32.4527 39.32 35.3245C39.32 38.1963 41.7078 40.5243 44.6533 40.5243H51V40.9923C51 46.0231 47.9467 49 42.7733 49H29.2267C24.0533 49 21 46.0231 21 40.9923V30.0077C21 24.9769 24.0533 22 29.2267 22H42.7733ZM49.88 32.3086C50.4986 32.3086 51 32.7975 51 33.4006V37.1964C50.9928 37.7966 50.4956 38.2814 49.88 38.2884H44.7733C43.2822 38.308 41.9782 37.3126 41.64 35.8965C41.4706 35.0174 41.7084 34.1103 42.2896 33.4183C42.8708 32.7263 43.736 32.3201 44.6533 32.3086H49.88ZM45.3733 34.0636H44.88C44.5771 34.0601 44.2854 34.175 44.07 34.3826C43.8545 34.5902 43.7333 34.8732 43.7333 35.1685C43.7333 35.7881 44.2446 36.2923 44.88 36.2995H45.3733C46.0066 36.2995 46.52 35.7989 46.52 35.1815C46.52 34.5641 46.0066 34.0636 45.3733 34.0636ZM36.5733 27.8368H28.1067C27.4786 27.8367 26.9673 28.3294 26.96 28.9417C26.96 29.5613 27.4712 30.0656 28.1067 30.0727H36.5733C37.2066 30.0727 37.72 29.5722 37.72 28.9547C37.72 28.3373 37.2066 27.8368 36.5733 27.8368Z"
+                                fill="#FCFCFC" />
+                            <rect x="1" y="1" width="70" height="70" rx="35" stroke="url(#paint0_linear_1_421)"
+                                stroke-width="2" />
+                            <defs>
+                                <linearGradient id="paint0_linear_1_421" x1="36" y1="0" x2="36" y2="72"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#3A3EA4" />
+                                    <stop offset="0.539047" stop-color="#9042A7" />
+                                    <stop offset="1" stop-color="#D843A9" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <svg viewBox="0 0 165 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M1 25.2431C1 25.2431 49.7635 32.8916 85.025 26.6741C120.286 20.4565 163.493 1.59115 163.493 1.59115"
+                                stroke="#D9DBE1" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 6" />
+                        </svg>
+                    </div>
+                    <p>Set up your wallet</p>
+                    <p>Once you've set up your wallet of choice.</p>
+                </div>
+                <div>
+                    <div>
+                        <svg viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M40.3492 21.8333C44.1883 21.8333 47.2908 23.3491 47.3333 27.2025V48.7075C47.3333 48.9483 47.2767 49.1891 47.1633 49.4016C46.9792 49.7416 46.6675 49.9966 46.285 50.11C45.9167 50.2233 45.5058 50.1666 45.1658 49.9683L35.9858 45.3783L26.7917 49.9683C26.5806 50.0802 26.3383 50.1525 26.0975 50.1525C25.3042 50.1525 24.6667 49.5008 24.6667 48.7075V27.2025C24.6667 23.3491 27.7833 21.8333 31.6083 21.8333H40.3492ZM41.3125 30.39H30.645C30.0358 30.39 29.54 30.8858 29.54 31.5091C29.54 32.1311 30.0358 32.6283 30.645 32.6283H41.3125C41.9217 32.6283 42.4175 32.1311 42.4175 31.5091C42.4175 30.8858 41.9217 30.39 41.3125 30.39Z"
+                                fill="#FCFCFC" />
+                            <rect x="1" y="1" width="70" height="70" rx="35" stroke="url(#paint0_linear_1_431)"
+                                stroke-width="2" />
+                            <defs>
+                                <linearGradient id="paint0_linear_1_431" x1="15.5" y1="21" x2="55" y2="72"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#3A41A4" />
+                                    <stop offset="0.364583" stop-color="#8942A7" />
+                                    <stop offset="1" stop-color="#D843A9" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+
+                        <svg viewBox="0 0 165 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M1 2.84741C1 2.84741 49.7635 -1.80109 85.025 4.41646C120.286 10.634 163.493 26.4994 163.493 26.4994"
+                                stroke="#D9DBE1" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 6" />
+                        </svg>
+
+                    </div>
+                    <p>Make your collection</p>
+                    <p>Add social links, a description, profile & banner images and name of your collection.</p>
+                </div>
+                <div>
+                    <div>
+                        <svg viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M40.8871 24.3554C40.8304 24.7096 40.8021 25.0637 40.8021 25.4179C40.8021 28.6054 43.3804 31.1823 46.5537 31.1823C46.9079 31.1823 47.2479 31.1412 47.6021 31.0846V42.5157C47.6021 47.3196 44.7687 50.1671 39.9521 50.1671H29.4843C24.6662 50.1671 21.8329 47.3196 21.8329 42.5157V32.0337C21.8329 27.2171 24.6662 24.3554 29.4843 24.3554H40.8871ZM41.1718 32.9687C40.7879 32.9262 40.4068 33.0962 40.1787 33.4079L36.7518 37.8421L32.8262 34.7537C32.5854 34.5696 32.3021 34.4973 32.0187 34.5271C31.7368 34.5696 31.4818 34.724 31.3104 34.9507L27.1185 40.4062L27.0321 40.5337C26.7912 40.9857 26.9046 41.5665 27.3296 41.8796C27.5279 42.0071 27.7404 42.0921 27.9812 42.0921C28.3085 42.1062 28.6187 41.9348 28.8171 41.6671L32.3729 37.0898L36.4104 40.1229L36.5379 40.2065C36.9912 40.4473 37.5579 40.3354 37.8837 39.909L41.9779 34.6262L41.9212 34.6546C42.1479 34.3429 42.1904 33.9462 42.0346 33.5921C41.8802 33.2379 41.5387 32.9971 41.1718 32.9687ZM46.7522 21.8333C48.6364 21.8333 50.1664 23.3633 50.1664 25.2475C50.1664 27.1316 48.6364 28.6616 46.7522 28.6616C44.868 28.6616 43.338 27.1316 43.338 25.2475C43.338 23.3633 44.868 21.8333 46.7522 21.8333Z"
+                                fill="#FCFCFC" />
+                            <rect x="1" y="1" width="70" height="70" rx="35" stroke="url(#paint0_linear_1_442)"
+                                stroke-width="2" />
+                            <defs>
+                                <linearGradient id="paint0_linear_1_442" x1="15.5" y1="21" x2="55" y2="72"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#3A41A4" />
+                                    <stop offset="0.364583" stop-color="#8942A7" />
+                                    <stop offset="1" stop-color="#D843A9" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+
+                        <svg viewBox="0 0 165 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M1 25.2431C1 25.2431 49.7635 32.8916 85.025 26.6741C120.286 20.4565 163.493 1.59115 163.493 1.59115"
+                                stroke="#D9DBE1" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 6" />
+                        </svg>
+
+                    </div>
+                    <p>Add your NFTs</p>
+                    <p>Upload your artwork (image, 3D, videos) and customize with NFT wit properties.</p>
+                </div>
+                <div>
+                    <div>
+                        <svg viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M36.007 20.9167C39.8036 20.9167 42.9249 23.9878 43.0833 27.8792H43.0463C43.0508 27.9924 43.0296 28.105 42.9846 28.2084H43.2058C44.9299 28.2084 46.7353 29.4385 47.4592 32.4081L47.5378 32.7585L48.6271 41.7923C49.411 47.5542 46.3487 49.9773 42.1713 50.0799L41.8912 50.0834H30.1471C25.9017 50.0834 22.6303 48.4908 23.3496 42.1844L23.3986 41.7923L24.5004 32.7585C25.0437 29.5605 26.8676 28.2991 28.625 28.2131L28.8199 28.2084H28.9307C28.912 28.0995 28.912 27.9881 28.9307 27.8792C29.0891 23.9878 32.2104 20.9167 36.007 20.9167ZM31.8874 33.0636C31.1959 33.0636 30.6354 33.6575 30.6354 34.3901C30.6354 35.1228 31.1959 35.7167 31.8874 35.7167C32.5789 35.7167 33.1394 35.1228 33.1394 34.3901L33.1297 34.2237C33.0524 33.5696 32.5257 33.0636 31.8874 33.0636ZM40.0882 33.0636C39.3968 33.0636 38.8362 33.6575 38.8362 34.3901C38.8362 35.1228 39.3968 35.7167 40.0882 35.7167C40.7797 35.7167 41.3403 35.1228 41.3403 34.3901C41.3403 33.6575 40.7797 33.0636 40.0882 33.0636ZM35.9515 22.816C33.2257 22.816 31.0159 25.0829 31.0159 27.8792C31.0346 27.9881 31.0346 28.0995 31.0159 28.2084H40.9487C40.9093 28.1033 40.8884 27.9918 40.887 27.8792C40.887 25.0829 38.6773 22.816 35.9515 22.816Z"
+                                fill="#FCFCFC" />
+                            <rect x="1" y="1" width="70" height="70" rx="35" stroke="url(#paint0_linear_1_452)"
+                                stroke-width="2" />
+                            <defs>
+                                <linearGradient id="paint0_linear_1_452" x1="36" y1="0" x2="36" y2="72"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#3A41A4" />
+                                    <stop offset="1" stop-color="#9342A7" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <p>List for sale</p>
+                    <p>Choose between auctions, fixed-price listings, and declining-price listings</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h3>Explore by category</h3>
+            <div>
+                <div>Art</div>
+                <div>Music</div>
+                <div>Sport</div>
+            </div>
+        </section>
+        <section>
+            <h3>Popular Artwork</h3>
+            <div>
+                <div class="card">
+                    <div class="card-picture">
+                        <div class="card-picture-price">
+                            <p>2.0 eth</p>
+                            <p>2:22:40</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>Isomorphic Design</p>
+                        <p>Daendles Art</p>
+                        <div>
+                            <div>
+                                <p>Total Bidders</p>
+                                <p>20 users</p>
+                            </div>
+                            <button>Place Bid</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-picture">
+                        <div class="card-picture-price">
+                            <p>2.0 eth</p>
+                            <p>2:22:40</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>Isomorphic Design</p>
+                        <p>Daendles Art</p>
+                        <div>
+                            <div>
+                                <p>Total Bidders</p>
+                                <p>20 users</p>
+                            </div>
+                            <button>Place Bid</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-picture">
+                        <div class="card-picture-price">
+                            <p>2.0 eth</p>
+                            <p>2:22:40</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>Isomorphic Design</p>
+                        <p>Daendles Art</p>
+                        <div>
+                            <div>
+                                <p>Total Bidders</p>
+                                <p>20 users</p>
+                            </div>
+                            <button>Place Bid</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-picture">
+                        <div class="card-picture-price">
+                            <p>2.0 eth</p>
+                            <p>2:22:40</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <p>Isomorphic Design</p>
+                        <p>Daendles Art</p>
+                        <div>
+                            <div>
+                                <p>Total Bidders</p>
+                                <p>20 users</p>
+                            </div>
+                            <button>Place Bid</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h3>Popular artist this month</h3>
+            <div>
+                <div class="artist-card">
+                    <div class="artist-card-bg"></div>
+                    <div class="artist-card-profile-pic"></div>
+                    <p class="artist-card-name">Barbara Gordon</p>
+                    <div class="artist-card-footer">
+                        <div>
+                            <p>27</p>
+                            <p>Items</p>
+                        </div>
+                        <div>
+                            <p>0.15</p>
+                            <p>Floor Price</p>
+                        </div>
+                        <div>
+                            <p>27k</p>
+                            <p>Owners</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="artist-card">
+                    <div class="artist-card-bg"></div>
+                    <div class="artist-card-profile-pic"></div>
+                    <p class="artist-card-name">Barbara Gordon</p>
+                    <div class="artist-card-footer">
+                        <div>
+                            <p>27</p>
+                            <p>Items</p>
+                        </div>
+                        <div>
+                            <p>0.15</p>
+                            <p>Floor Price</p>
+                        </div>
+                        <div>
+                            <p>27k</p>
+                            <p>Owners</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="artist-card">
+                    <div class="artist-card-bg"></div>
+                    <div class="artist-card-profile-pic"></div>
+                    <p class="artist-card-name">Barbara Gordon</p>
+                    <div class="artist-card-footer">
+                        <div>
+                            <p>27</p>
+                            <p>Items</p>
+                        </div>
+                        <div>
+                            <p>0.15</p>
+                            <p>Floor Price</p>
+                        </div>
+                        <div>
+                            <p>27k</p>
+                            <p>Owners</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="artist-card">
+                    <div class="artist-card-bg"></div>
+                    <div class="artist-card-profile-pic"></div>
+                    <p class="artist-card-name">Barbara Gordon</p>
+                    <div class="artist-card-footer">
+                        <div>
+                            <p>27</p>
+                            <p>Items</p>
+                        </div>
+                        <div>
+                            <p>0.15</p>
+                            <p>Floor Price</p>
+                        </div>
+                        <div>
+                            <p>27k</p>
+                            <p>Owners</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h3>Subscribe to get latest news update</h3>
+            <p>We recommended you to subscribe to our newspaper, enter your email below to get our daily update about
+                us.
+            </p>
+            <div>
+                <input type="text" placeholder="Enter your email address">
+                <button>Subscribe now</button>
+            </div>
+        </section>
+        <footer>
+            <div>
+                <p>Blumbang</p>
+                <p>Copyright 2020 Blumbang Design.</p>
+                <p>All rights reserved</p>
+                <div>
+                    <svg width="32" heig viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.1" fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16Z"
+                            fill="white" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M16.0008 7.46667C13.6833 7.46667 13.3924 7.47681 12.4822 7.51823C11.5737 7.55983 10.9536 7.70366 10.4111 7.91468C9.84981 8.13264 9.37372 8.4242 8.8994 8.89869C8.42473 9.37301 8.13317 9.8491 7.9145 10.4102C7.70294 10.9529 7.55894 11.5732 7.51805 12.4813C7.47734 13.3915 7.46667 13.6826 7.46667 16.0001C7.46667 18.3176 7.47699 18.6076 7.51823 19.5178C7.56001 20.4263 7.70383 21.0464 7.91468 21.589C8.13282 22.1502 8.42437 22.6263 8.89887 23.1006C9.37301 23.5753 9.8491 23.8676 10.41 24.0855C10.9529 24.2965 11.5732 24.4404 12.4815 24.482C13.3917 24.5234 13.6824 24.5335 15.9997 24.5335C18.3175 24.5335 18.6074 24.5234 19.5176 24.482C20.4261 24.4404 21.0469 24.2965 21.5898 24.0855C22.1509 23.8676 22.6263 23.5753 23.1004 23.1006C23.5751 22.6263 23.8667 22.1502 24.0853 21.5891C24.2951 21.0464 24.4391 20.4261 24.4818 19.518C24.5227 18.6078 24.5333 18.3176 24.5333 16.0001C24.5333 13.6826 24.5227 13.3917 24.4818 12.4815C24.4391 11.573 24.2951 10.9529 24.0853 10.4103C23.8667 9.8491 23.5751 9.37301 23.1004 8.89869C22.6258 8.42402 22.1511 8.13246 21.5893 7.91468C21.0453 7.70366 20.4249 7.55983 19.5164 7.51823C18.6062 7.47681 18.3164 7.46667 15.9981 7.46667H16.0008ZM15.2353 9.00444C15.4625 9.00409 15.716 9.00444 16.0008 9.00444C18.2792 9.00444 18.5492 9.01262 19.449 9.05351C20.281 9.09156 20.7326 9.23058 21.0334 9.34738C21.4316 9.50205 21.7155 9.68694 22.014 9.98561C22.3127 10.2843 22.4975 10.5687 22.6526 10.967C22.7694 11.2674 22.9086 11.719 22.9464 12.551C22.9873 13.4505 22.9962 13.7208 22.9962 15.9981C22.9962 18.2755 22.9873 18.5457 22.9464 19.4453C22.9084 20.2773 22.7694 20.7288 22.6526 21.0293C22.4979 21.4275 22.3127 21.7111 22.014 22.0096C21.7153 22.3082 21.4318 22.4931 21.0334 22.6478C20.7329 22.7651 20.281 22.9038 19.449 22.9418C18.5494 22.9827 18.2792 22.9916 16.0008 22.9916C13.7222 22.9916 13.4521 22.9827 12.5526 22.9418C11.7205 22.9034 11.269 22.7644 10.968 22.6476C10.5698 22.4929 10.2853 22.3081 9.98666 22.0094C9.68799 21.7107 9.5031 21.427 9.34808 21.0286C9.23128 20.7281 9.09208 20.2766 9.05421 19.4446C9.01332 18.545 9.00514 18.2748 9.00514 15.996C9.00514 13.7172 9.01332 13.4484 9.05421 12.5488C9.09226 11.7168 9.23128 11.2653 9.34808 10.9645C9.50275 10.5662 9.68799 10.2818 9.98666 9.98312C10.2853 9.68445 10.5698 9.49956 10.968 9.34454C11.2688 9.2272 11.7205 9.08853 12.5526 9.05031C13.3398 9.01476 13.6448 9.00409 15.2353 9.00231V9.00444ZM20.5558 10.4214C19.9905 10.4214 19.5318 10.8795 19.5318 11.445C19.5318 12.0103 19.9905 12.469 20.5558 12.469C21.1212 12.469 21.5799 12.0103 21.5799 11.445C21.5799 10.8797 21.1212 10.4214 20.5558 10.4214ZM16.0008 11.6178C13.5807 11.6178 11.6186 13.58 11.6186 16.0001C11.6186 18.4202 13.5807 20.3815 16.0008 20.3815C18.4209 20.3815 20.3824 18.4202 20.3824 16.0001C20.3824 13.58 18.4209 11.6178 16.0008 11.6178ZM16.0008 13.1556C17.5717 13.1556 18.8453 14.429 18.8453 16.0001C18.8453 17.5709 17.5717 18.8445 16.0008 18.8445C14.4298 18.8445 13.1563 17.5709 13.1563 16.0001C13.1563 14.429 14.4298 13.1556 16.0008 13.1556Z"
+                            fill="white" />
+                    </svg>
+                    <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.1" fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16Z"
+                            fill="white" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M24.5333 15.9882C24.5333 16.5653 24.4746 17.1416 24.3592 17.7033C24.2467 18.2517 24.08 18.7901 23.8617 19.3048C23.6483 19.8104 23.3837 20.2976 23.0745 20.752C22.77 21.2035 22.4191 21.627 22.0337 22.0131C21.6474 22.3976 21.2224 22.7475 20.7711 23.0534C20.3152 23.3604 19.8273 23.6246 19.3215 23.8389C18.806 24.0561 18.2664 24.2226 17.7184 24.3349C17.1559 24.4506 16.5776 24.5096 15.9996 24.5096C15.4213 24.5096 14.8429 24.4506 14.2812 24.3349C13.7324 24.2226 13.1928 24.0561 12.6778 23.8389C12.1719 23.6246 11.6836 23.3604 11.2277 23.0534C10.7764 22.7475 10.3514 22.3976 9.96599 22.0131C9.58015 21.627 9.22928 21.2035 8.92427 20.752C8.61675 20.2976 8.35172 19.8104 8.13755 19.3048C7.91918 18.7901 7.75211 18.2517 7.63919 17.7033C7.52503 17.1416 7.46667 16.5653 7.46667 15.9882C7.46667 15.4107 7.52499 14.8331 7.63922 14.2726C7.75215 13.7242 7.91922 13.185 8.13759 12.6711C8.35175 12.1652 8.61678 11.6775 8.9243 11.2231C9.22931 10.7713 9.58018 10.3485 9.96602 9.96195C10.3515 9.57746 10.7765 9.2284 11.2278 8.923C11.6836 8.61466 12.172 8.35047 12.6778 8.13575C13.1929 7.9181 13.7324 7.75127 14.2812 7.63977C14.8429 7.52494 15.4213 7.46667 15.9997 7.46667C16.5776 7.46667 17.1559 7.52494 17.7185 7.63977C18.2664 7.7513 18.806 7.91813 19.3215 8.13575C19.8273 8.35044 20.3153 8.61466 20.7711 8.923C21.2224 9.2284 21.6475 9.57746 22.0337 9.96195C22.4191 10.3485 22.77 10.7713 23.0746 11.2231C23.3837 11.6775 23.6483 12.1652 23.8617 12.6711C24.08 13.185 24.2467 13.7242 24.3592 14.2726C24.4746 14.8331 24.5333 15.4107 24.5333 15.9882ZM12.8903 9.40605C10.8581 10.3643 9.34131 12.2342 8.86836 14.4878C9.06048 14.4894 12.0973 14.5277 15.5962 13.5994C14.3349 11.3617 12.9874 9.53549 12.8903 9.40605ZM16.2 14.72C12.4477 15.8417 8.84711 15.761 8.71795 15.756C8.71585 15.8342 8.71211 15.9099 8.71211 15.9882C8.71211 17.8576 9.41839 19.5619 10.5793 20.8506C10.5768 20.8468 12.5711 17.3138 16.5038 16.0439C16.5988 16.0123 16.6955 15.984 16.7913 15.9566C16.6084 15.543 16.4087 15.1286 16.2 14.72ZM20.8124 10.5266C19.5293 9.39689 17.8447 8.71164 15.9996 8.71164C15.4075 8.71164 14.8329 8.78321 14.2824 8.91552C14.3916 9.062 15.7604 10.8753 17.0067 13.1604C19.7565 12.131 20.7944 10.5532 20.8124 10.5266ZM17.288 17.1624C17.2718 17.1677 17.2556 17.1724 17.2397 17.1782C12.94 18.675 11.5358 21.6914 11.5206 21.7244C12.7578 22.6851 14.3096 23.2647 15.9996 23.2647C17.0088 23.2647 17.9701 23.0595 18.8448 22.688C18.7368 22.0522 18.3135 19.8237 17.288 17.1624ZM20.0719 22.0231C21.7082 20.9205 22.8703 19.1696 23.1945 17.1415C23.0445 17.0933 21.0057 16.4487 18.6535 16.8253C19.6093 19.4484 19.9977 21.5846 20.0719 22.0231ZM17.5676 14.2448C17.7368 14.5918 17.9006 14.945 18.0518 15.2999C18.1056 15.4273 18.1581 15.5521 18.2093 15.6769C20.7128 15.3623 23.1792 15.8916 23.2846 15.9132C23.2679 14.1882 22.65 12.6049 21.6275 11.3654C21.6137 11.3849 20.4449 13.0714 17.5676 14.2448Z"
+                            fill="white" />
+                    </svg>
+                    <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.1" fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16Z"
+                            fill="white" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M15.5208 13.005L15.5544 13.5586L14.9948 13.4908C12.9579 13.2309 11.1784 12.3497 9.66756 10.8695L8.92891 10.1351L8.73865 10.6774C8.33575 11.8864 8.59316 13.1632 9.43253 14.0219C9.8802 14.4964 9.77948 14.5642 9.00725 14.2817C8.73865 14.1913 8.50363 14.1235 8.48124 14.1574C8.4029 14.2365 8.6715 15.2647 8.88414 15.6715C9.17513 16.2364 9.76828 16.79 10.4174 17.1177L10.9658 17.3776L10.3167 17.3889C9.68994 17.3889 9.66756 17.4002 9.73471 17.6374C9.95854 18.3719 10.8427 19.1515 11.8276 19.4904L12.5214 19.7277L11.9171 20.0893C11.0218 20.609 9.96973 20.9028 8.91772 20.9254C8.41409 20.9367 8 20.9819 8 21.0158C8 21.1287 9.36538 21.7615 10.16 22.01C12.5438 22.7445 15.3753 22.4281 17.5017 21.1739C19.0126 20.2813 20.5235 18.5074 21.2286 16.79C21.6091 15.8748 21.9896 14.2026 21.9896 13.4004C21.9896 12.8807 22.0232 12.8129 22.6499 12.1915C23.0192 11.8299 23.3662 11.4345 23.4333 11.3215C23.5452 11.1068 23.534 11.1068 22.9633 11.2989C22.012 11.6378 21.8777 11.5926 22.3477 11.0842C22.6947 10.7226 23.1088 10.0673 23.1088 9.87524C23.1088 9.84134 22.9409 9.89783 22.7506 9.99952C22.5492 10.1125 22.1015 10.282 21.7658 10.3837L21.1614 10.5758L20.613 10.2029C20.3108 9.99952 19.8856 9.77355 19.6617 9.70576C19.0909 9.54758 18.218 9.57017 17.7032 9.75095C16.3042 10.2594 15.4201 11.57 15.5208 13.005Z"
+                            fill="white" />
+                    </svg>
+                    <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.1" fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16Z"
+                            fill="white" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M22.6677 10.4995C23.4021 10.701 23.9804 11.2948 24.1767 12.0488C24.5333 13.4153 24.5333 16.2666 24.5333 16.2666C24.5333 16.2666 24.5333 19.1178 24.1767 20.4845C23.9804 21.2385 23.4021 21.8322 22.6677 22.0338C21.3369 22.4 16 22.4 16 22.4C16 22.4 10.6631 22.4 9.33218 22.0338C8.59783 21.8322 8.0195 21.2385 7.82323 20.4845C7.46667 19.1178 7.46667 16.2666 7.46667 16.2666C7.46667 16.2666 7.46667 13.4153 7.82323 12.0488C8.0195 11.2948 8.59783 10.701 9.33218 10.4995C10.6631 10.1333 16 10.1333 16 10.1333C16 10.1333 21.3369 10.1333 22.6677 10.4995ZM14.4 13.8666V19.1999L18.6667 16.5333L14.4 13.8666Z"
+                            fill="white" />
                     </svg>
 
-                    <svg viewBox="0 0 165 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M1 2.84741C1 2.84741 49.7635 -1.80109 85.025 4.41646C120.286 10.634 163.493 26.4994 163.493 26.4994"
-                            stroke="#D9DBE1" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 6" />
-                    </svg>
-
                 </div>
-                <p>Make your collection</p>
-                <p>Add social links, a description, profile & banner images and name of your collection.</p>
             </div>
             <div>
                 <div>
-                    <svg viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M40.8871 24.3554C40.8304 24.7096 40.8021 25.0637 40.8021 25.4179C40.8021 28.6054 43.3804 31.1823 46.5537 31.1823C46.9079 31.1823 47.2479 31.1412 47.6021 31.0846V42.5157C47.6021 47.3196 44.7687 50.1671 39.9521 50.1671H29.4843C24.6662 50.1671 21.8329 47.3196 21.8329 42.5157V32.0337C21.8329 27.2171 24.6662 24.3554 29.4843 24.3554H40.8871ZM41.1718 32.9687C40.7879 32.9262 40.4068 33.0962 40.1787 33.4079L36.7518 37.8421L32.8262 34.7537C32.5854 34.5696 32.3021 34.4973 32.0187 34.5271C31.7368 34.5696 31.4818 34.724 31.3104 34.9507L27.1185 40.4062L27.0321 40.5337C26.7912 40.9857 26.9046 41.5665 27.3296 41.8796C27.5279 42.0071 27.7404 42.0921 27.9812 42.0921C28.3085 42.1062 28.6187 41.9348 28.8171 41.6671L32.3729 37.0898L36.4104 40.1229L36.5379 40.2065C36.9912 40.4473 37.5579 40.3354 37.8837 39.909L41.9779 34.6262L41.9212 34.6546C42.1479 34.3429 42.1904 33.9462 42.0346 33.5921C41.8802 33.2379 41.5387 32.9971 41.1718 32.9687ZM46.7522 21.8333C48.6364 21.8333 50.1664 23.3633 50.1664 25.2475C50.1664 27.1316 48.6364 28.6616 46.7522 28.6616C44.868 28.6616 43.338 27.1316 43.338 25.2475C43.338 23.3633 44.868 21.8333 46.7522 21.8333Z"
-                            fill="#FCFCFC" />
-                        <rect x="1" y="1" width="70" height="70" rx="35" stroke="url(#paint0_linear_1_442)"
-                            stroke-width="2" />
-                        <defs>
-                            <linearGradient id="paint0_linear_1_442" x1="15.5" y1="21" x2="55" y2="72"
-                                gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#3A41A4" />
-                                <stop offset="0.364583" stop-color="#8942A7" />
-                                <stop offset="1" stop-color="#D843A9" />
-                            </linearGradient>
-                        </defs>
-                    </svg>
-
-                    <svg viewBox="0 0 165 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M1 25.2431C1 25.2431 49.7635 32.8916 85.025 26.6741C120.286 20.4565 163.493 1.59115 163.493 1.59115"
-                            stroke="#D9DBE1" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 6" />
-                    </svg>
-
+                    <h5>Company</h5>
+                    <nav>
+                        <ul>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                        </ul>
+                    </nav>
                 </div>
-                <p>Add your NFTs</p>
-                <p>Upload your artwork (image, 3D, videos) and customize with NFT wit properties.</p>
-            </div>
-            <div>
                 <div>
-                    <svg viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M36.007 20.9167C39.8036 20.9167 42.9249 23.9878 43.0833 27.8792H43.0463C43.0508 27.9924 43.0296 28.105 42.9846 28.2084H43.2058C44.9299 28.2084 46.7353 29.4385 47.4592 32.4081L47.5378 32.7585L48.6271 41.7923C49.411 47.5542 46.3487 49.9773 42.1713 50.0799L41.8912 50.0834H30.1471C25.9017 50.0834 22.6303 48.4908 23.3496 42.1844L23.3986 41.7923L24.5004 32.7585C25.0437 29.5605 26.8676 28.2991 28.625 28.2131L28.8199 28.2084H28.9307C28.912 28.0995 28.912 27.9881 28.9307 27.8792C29.0891 23.9878 32.2104 20.9167 36.007 20.9167ZM31.8874 33.0636C31.1959 33.0636 30.6354 33.6575 30.6354 34.3901C30.6354 35.1228 31.1959 35.7167 31.8874 35.7167C32.5789 35.7167 33.1394 35.1228 33.1394 34.3901L33.1297 34.2237C33.0524 33.5696 32.5257 33.0636 31.8874 33.0636ZM40.0882 33.0636C39.3968 33.0636 38.8362 33.6575 38.8362 34.3901C38.8362 35.1228 39.3968 35.7167 40.0882 35.7167C40.7797 35.7167 41.3403 35.1228 41.3403 34.3901C41.3403 33.6575 40.7797 33.0636 40.0882 33.0636ZM35.9515 22.816C33.2257 22.816 31.0159 25.0829 31.0159 27.8792C31.0346 27.9881 31.0346 28.0995 31.0159 28.2084H40.9487C40.9093 28.1033 40.8884 27.9918 40.887 27.8792C40.887 25.0829 38.6773 22.816 35.9515 22.816Z"
-                            fill="#FCFCFC" />
-                        <rect x="1" y="1" width="70" height="70" rx="35" stroke="url(#paint0_linear_1_452)"
-                            stroke-width="2" />
-                        <defs>
-                            <linearGradient id="paint0_linear_1_452" x1="36" y1="0" x2="36" y2="72"
-                                gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#3A41A4" />
-                                <stop offset="1" stop-color="#9342A7" />
-                            </linearGradient>
-                        </defs>
-                    </svg>
+                    <h5>Support</h5>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Help center</a></li>
+                            <li><a href="#">Terms of service</a></li>
+                            <li><a href="#">Legal</a></li>
+                            <li><a href="#">Privacy policy</a></li>
+                            <li><a href="#">Status</a></li>
+                        </ul>
+                    </nav>
                 </div>
-                <p>List for sale</p>
-                <p>Choose between auctions, fixed-price listings, and declining-price listings</p>
-            </div>
-        </div>
-    </section>
-    <section>
-        <h3>Explore by category</h3>
-        <div>
-            <div>Art</div>
-            <div>Music</div>
-            <div>Sport</div>
-        </div>
-    </section>
-    <section>
-        <h3>Popular Artwork</h3>
-        <div>
-            <div class="card">
-                <div class="card-picture">
-                    <div class="card-picture-price">
-                        <p>2.0 eth</p>
-                        <p>2:22:40</p>
-                    </div>
-                </div>
-                <div class="card-footer">
-                    <p>Isomorphic Design</p>
-                    <p>Daendles Art</p>
-                    <div>
-                        <div>
-                            <p>Total Bidders</p>
-                            <p>20 users</p>
-                        </div>
-                        <button>Place Bid</button>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-picture">
-                    <div class="card-picture-price">
-                        <p>2.0 eth</p>
-                        <p>2:22:40</p>
-                    </div>
-                </div>
-                <div class="card-footer">
-                    <p>Isomorphic Design</p>
-                    <p>Daendles Art</p>
-                    <div>
-                        <div>
-                            <p>Total Bidders</p>
-                            <p>20 users</p>
-                        </div>
-                        <button>Place Bid</button>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-picture">
-                    <div class="card-picture-price">
-                        <p>2.0 eth</p>
-                        <p>2:22:40</p>
-                    </div>
-                </div>
-                <div class="card-footer">
-                    <p>Isomorphic Design</p>
-                    <p>Daendles Art</p>
-                    <div>
-                        <div>
-                            <p>Total Bidders</p>
-                            <p>20 users</p>
-                        </div>
-                        <button>Place Bid</button>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-picture">
-                    <div class="card-picture-price">
-                        <p>2.0 eth</p>
-                        <p>2:22:40</p>
-                    </div>
-                </div>
-                <div class="card-footer">
-                    <p>Isomorphic Design</p>
-                    <p>Daendles Art</p>
-                    <div>
-                        <div>
-                            <p>Total Bidders</p>
-                            <p>20 users</p>
-                        </div>
-                        <button>Place Bid</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section>
-        <h3>Popular artist this month</h3>
-        <div>
-            <div class="artist-card">
-                <div class="artist-card-bg"></div>
-                <div class="artist-card-profile-pic"></div>
-                <p class="artist-card-name">Barbara Gordon</p>
-                <div class="artist-card-footer">
-                    <div>
-                        <p>27</p>
-                        <p>Items</p>
-                    </div>
-                    <div>
-                        <p>0.15</p>
-                        <p>Floor Price</p>
-                    </div>
-                    <div>
-                        <p>27k</p>
-                        <p>Owners</p>
-                    </div>
-                </div>
-            </div>
-            <div class="artist-card">
-                <div class="artist-card-bg"></div>
-                <div class="artist-card-profile-pic"></div>
-                <p class="artist-card-name">Barbara Gordon</p>
-                <div class="artist-card-footer">
-                    <div>
-                        <p>27</p>
-                        <p>Items</p>
-                    </div>
-                    <div>
-                        <p>0.15</p>
-                        <p>Floor Price</p>
-                    </div>
-                    <div>
-                        <p>27k</p>
-                        <p>Owners</p>
-                    </div>
-                </div>
-            </div>
-            <div class="artist-card">
-                <div class="artist-card-bg"></div>
-                <div class="artist-card-profile-pic"></div>
-                <p class="artist-card-name">Barbara Gordon</p>
-                <div class="artist-card-footer">
-                    <div>
-                        <p>27</p>
-                        <p>Items</p>
-                    </div>
-                    <div>
-                        <p>0.15</p>
-                        <p>Floor Price</p>
-                    </div>
-                    <div>
-                        <p>27k</p>
-                        <p>Owners</p>
-                    </div>
-                </div>
-            </div>
-            <div class="artist-card">
-                <div class="artist-card-bg"></div>
-                <div class="artist-card-profile-pic"></div>
-                <p class="artist-card-name">Barbara Gordon</p>
-                <div class="artist-card-footer">
-                    <div>
-                        <p>27</p>
-                        <p>Items</p>
-                    </div>
-                    <div>
-                        <p>0.15</p>
-                        <p>Floor Price</p>
-                    </div>
-                    <div>
-                        <p>27k</p>
-                        <p>Owners</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section>
-        <h3>Subscribe to get latest news update</h3>
-        <p>We recommended you to subscribe to our newspaper, enter your email below to get our daily update about us.
-        </p>
-        <div>
-            <input type="text" placeholder="Enter your email address">
-            <button>Subscribe now</button>
-        </div>
-    </section>
-    <footer>
-        <div>
-            <p>Blumbang</p>
-            <p>Copyright 2020 Blumbang Design.</p>
-            <p>All rights reserved</p>
-            <div>
-                <svg width="32" heig viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.1" fill-rule="evenodd" clip-rule="evenodd"
-                        d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16Z"
-                        fill="white" />
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M16.0008 7.46667C13.6833 7.46667 13.3924 7.47681 12.4822 7.51823C11.5737 7.55983 10.9536 7.70366 10.4111 7.91468C9.84981 8.13264 9.37372 8.4242 8.8994 8.89869C8.42473 9.37301 8.13317 9.8491 7.9145 10.4102C7.70294 10.9529 7.55894 11.5732 7.51805 12.4813C7.47734 13.3915 7.46667 13.6826 7.46667 16.0001C7.46667 18.3176 7.47699 18.6076 7.51823 19.5178C7.56001 20.4263 7.70383 21.0464 7.91468 21.589C8.13282 22.1502 8.42437 22.6263 8.89887 23.1006C9.37301 23.5753 9.8491 23.8676 10.41 24.0855C10.9529 24.2965 11.5732 24.4404 12.4815 24.482C13.3917 24.5234 13.6824 24.5335 15.9997 24.5335C18.3175 24.5335 18.6074 24.5234 19.5176 24.482C20.4261 24.4404 21.0469 24.2965 21.5898 24.0855C22.1509 23.8676 22.6263 23.5753 23.1004 23.1006C23.5751 22.6263 23.8667 22.1502 24.0853 21.5891C24.2951 21.0464 24.4391 20.4261 24.4818 19.518C24.5227 18.6078 24.5333 18.3176 24.5333 16.0001C24.5333 13.6826 24.5227 13.3917 24.4818 12.4815C24.4391 11.573 24.2951 10.9529 24.0853 10.4103C23.8667 9.8491 23.5751 9.37301 23.1004 8.89869C22.6258 8.42402 22.1511 8.13246 21.5893 7.91468C21.0453 7.70366 20.4249 7.55983 19.5164 7.51823C18.6062 7.47681 18.3164 7.46667 15.9981 7.46667H16.0008ZM15.2353 9.00444C15.4625 9.00409 15.716 9.00444 16.0008 9.00444C18.2792 9.00444 18.5492 9.01262 19.449 9.05351C20.281 9.09156 20.7326 9.23058 21.0334 9.34738C21.4316 9.50205 21.7155 9.68694 22.014 9.98561C22.3127 10.2843 22.4975 10.5687 22.6526 10.967C22.7694 11.2674 22.9086 11.719 22.9464 12.551C22.9873 13.4505 22.9962 13.7208 22.9962 15.9981C22.9962 18.2755 22.9873 18.5457 22.9464 19.4453C22.9084 20.2773 22.7694 20.7288 22.6526 21.0293C22.4979 21.4275 22.3127 21.7111 22.014 22.0096C21.7153 22.3082 21.4318 22.4931 21.0334 22.6478C20.7329 22.7651 20.281 22.9038 19.449 22.9418C18.5494 22.9827 18.2792 22.9916 16.0008 22.9916C13.7222 22.9916 13.4521 22.9827 12.5526 22.9418C11.7205 22.9034 11.269 22.7644 10.968 22.6476C10.5698 22.4929 10.2853 22.3081 9.98666 22.0094C9.68799 21.7107 9.5031 21.427 9.34808 21.0286C9.23128 20.7281 9.09208 20.2766 9.05421 19.4446C9.01332 18.545 9.00514 18.2748 9.00514 15.996C9.00514 13.7172 9.01332 13.4484 9.05421 12.5488C9.09226 11.7168 9.23128 11.2653 9.34808 10.9645C9.50275 10.5662 9.68799 10.2818 9.98666 9.98312C10.2853 9.68445 10.5698 9.49956 10.968 9.34454C11.2688 9.2272 11.7205 9.08853 12.5526 9.05031C13.3398 9.01476 13.6448 9.00409 15.2353 9.00231V9.00444ZM20.5558 10.4214C19.9905 10.4214 19.5318 10.8795 19.5318 11.445C19.5318 12.0103 19.9905 12.469 20.5558 12.469C21.1212 12.469 21.5799 12.0103 21.5799 11.445C21.5799 10.8797 21.1212 10.4214 20.5558 10.4214ZM16.0008 11.6178C13.5807 11.6178 11.6186 13.58 11.6186 16.0001C11.6186 18.4202 13.5807 20.3815 16.0008 20.3815C18.4209 20.3815 20.3824 18.4202 20.3824 16.0001C20.3824 13.58 18.4209 11.6178 16.0008 11.6178ZM16.0008 13.1556C17.5717 13.1556 18.8453 14.429 18.8453 16.0001C18.8453 17.5709 17.5717 18.8445 16.0008 18.8445C14.4298 18.8445 13.1563 17.5709 13.1563 16.0001C13.1563 14.429 14.4298 13.1556 16.0008 13.1556Z"
-                        fill="white" />
-                </svg>
-                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.1" fill-rule="evenodd" clip-rule="evenodd"
-                        d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16Z"
-                        fill="white" />
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M24.5333 15.9882C24.5333 16.5653 24.4746 17.1416 24.3592 17.7033C24.2467 18.2517 24.08 18.7901 23.8617 19.3048C23.6483 19.8104 23.3837 20.2976 23.0745 20.752C22.77 21.2035 22.4191 21.627 22.0337 22.0131C21.6474 22.3976 21.2224 22.7475 20.7711 23.0534C20.3152 23.3604 19.8273 23.6246 19.3215 23.8389C18.806 24.0561 18.2664 24.2226 17.7184 24.3349C17.1559 24.4506 16.5776 24.5096 15.9996 24.5096C15.4213 24.5096 14.8429 24.4506 14.2812 24.3349C13.7324 24.2226 13.1928 24.0561 12.6778 23.8389C12.1719 23.6246 11.6836 23.3604 11.2277 23.0534C10.7764 22.7475 10.3514 22.3976 9.96599 22.0131C9.58015 21.627 9.22928 21.2035 8.92427 20.752C8.61675 20.2976 8.35172 19.8104 8.13755 19.3048C7.91918 18.7901 7.75211 18.2517 7.63919 17.7033C7.52503 17.1416 7.46667 16.5653 7.46667 15.9882C7.46667 15.4107 7.52499 14.8331 7.63922 14.2726C7.75215 13.7242 7.91922 13.185 8.13759 12.6711C8.35175 12.1652 8.61678 11.6775 8.9243 11.2231C9.22931 10.7713 9.58018 10.3485 9.96602 9.96195C10.3515 9.57746 10.7765 9.2284 11.2278 8.923C11.6836 8.61466 12.172 8.35047 12.6778 8.13575C13.1929 7.9181 13.7324 7.75127 14.2812 7.63977C14.8429 7.52494 15.4213 7.46667 15.9997 7.46667C16.5776 7.46667 17.1559 7.52494 17.7185 7.63977C18.2664 7.7513 18.806 7.91813 19.3215 8.13575C19.8273 8.35044 20.3153 8.61466 20.7711 8.923C21.2224 9.2284 21.6475 9.57746 22.0337 9.96195C22.4191 10.3485 22.77 10.7713 23.0746 11.2231C23.3837 11.6775 23.6483 12.1652 23.8617 12.6711C24.08 13.185 24.2467 13.7242 24.3592 14.2726C24.4746 14.8331 24.5333 15.4107 24.5333 15.9882ZM12.8903 9.40605C10.8581 10.3643 9.34131 12.2342 8.86836 14.4878C9.06048 14.4894 12.0973 14.5277 15.5962 13.5994C14.3349 11.3617 12.9874 9.53549 12.8903 9.40605ZM16.2 14.72C12.4477 15.8417 8.84711 15.761 8.71795 15.756C8.71585 15.8342 8.71211 15.9099 8.71211 15.9882C8.71211 17.8576 9.41839 19.5619 10.5793 20.8506C10.5768 20.8468 12.5711 17.3138 16.5038 16.0439C16.5988 16.0123 16.6955 15.984 16.7913 15.9566C16.6084 15.543 16.4087 15.1286 16.2 14.72ZM20.8124 10.5266C19.5293 9.39689 17.8447 8.71164 15.9996 8.71164C15.4075 8.71164 14.8329 8.78321 14.2824 8.91552C14.3916 9.062 15.7604 10.8753 17.0067 13.1604C19.7565 12.131 20.7944 10.5532 20.8124 10.5266ZM17.288 17.1624C17.2718 17.1677 17.2556 17.1724 17.2397 17.1782C12.94 18.675 11.5358 21.6914 11.5206 21.7244C12.7578 22.6851 14.3096 23.2647 15.9996 23.2647C17.0088 23.2647 17.9701 23.0595 18.8448 22.688C18.7368 22.0522 18.3135 19.8237 17.288 17.1624ZM20.0719 22.0231C21.7082 20.9205 22.8703 19.1696 23.1945 17.1415C23.0445 17.0933 21.0057 16.4487 18.6535 16.8253C19.6093 19.4484 19.9977 21.5846 20.0719 22.0231ZM17.5676 14.2448C17.7368 14.5918 17.9006 14.945 18.0518 15.2999C18.1056 15.4273 18.1581 15.5521 18.2093 15.6769C20.7128 15.3623 23.1792 15.8916 23.2846 15.9132C23.2679 14.1882 22.65 12.6049 21.6275 11.3654C21.6137 11.3849 20.4449 13.0714 17.5676 14.2448Z"
-                        fill="white" />
-                </svg>
-                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.1" fill-rule="evenodd" clip-rule="evenodd"
-                        d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16Z"
-                        fill="white" />
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M15.5208 13.005L15.5544 13.5586L14.9948 13.4908C12.9579 13.2309 11.1784 12.3497 9.66756 10.8695L8.92891 10.1351L8.73865 10.6774C8.33575 11.8864 8.59316 13.1632 9.43253 14.0219C9.8802 14.4964 9.77948 14.5642 9.00725 14.2817C8.73865 14.1913 8.50363 14.1235 8.48124 14.1574C8.4029 14.2365 8.6715 15.2647 8.88414 15.6715C9.17513 16.2364 9.76828 16.79 10.4174 17.1177L10.9658 17.3776L10.3167 17.3889C9.68994 17.3889 9.66756 17.4002 9.73471 17.6374C9.95854 18.3719 10.8427 19.1515 11.8276 19.4904L12.5214 19.7277L11.9171 20.0893C11.0218 20.609 9.96973 20.9028 8.91772 20.9254C8.41409 20.9367 8 20.9819 8 21.0158C8 21.1287 9.36538 21.7615 10.16 22.01C12.5438 22.7445 15.3753 22.4281 17.5017 21.1739C19.0126 20.2813 20.5235 18.5074 21.2286 16.79C21.6091 15.8748 21.9896 14.2026 21.9896 13.4004C21.9896 12.8807 22.0232 12.8129 22.6499 12.1915C23.0192 11.8299 23.3662 11.4345 23.4333 11.3215C23.5452 11.1068 23.534 11.1068 22.9633 11.2989C22.012 11.6378 21.8777 11.5926 22.3477 11.0842C22.6947 10.7226 23.1088 10.0673 23.1088 9.87524C23.1088 9.84134 22.9409 9.89783 22.7506 9.99952C22.5492 10.1125 22.1015 10.282 21.7658 10.3837L21.1614 10.5758L20.613 10.2029C20.3108 9.99952 19.8856 9.77355 19.6617 9.70576C19.0909 9.54758 18.218 9.57017 17.7032 9.75095C16.3042 10.2594 15.4201 11.57 15.5208 13.005Z"
-                        fill="white" />
-                </svg>
-                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.1" fill-rule="evenodd" clip-rule="evenodd"
-                        d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16Z"
-                        fill="white" />
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M22.6677 10.4995C23.4021 10.701 23.9804 11.2948 24.1767 12.0488C24.5333 13.4153 24.5333 16.2666 24.5333 16.2666C24.5333 16.2666 24.5333 19.1178 24.1767 20.4845C23.9804 21.2385 23.4021 21.8322 22.6677 22.0338C21.3369 22.4 16 22.4 16 22.4C16 22.4 10.6631 22.4 9.33218 22.0338C8.59783 21.8322 8.0195 21.2385 7.82323 20.4845C7.46667 19.1178 7.46667 16.2666 7.46667 16.2666C7.46667 16.2666 7.46667 13.4153 7.82323 12.0488C8.0195 11.2948 8.59783 10.701 9.33218 10.4995C10.6631 10.1333 16 10.1333 16 10.1333C16 10.1333 21.3369 10.1333 22.6677 10.4995ZM14.4 13.8666V19.1999L18.6667 16.5333L14.4 13.8666Z"
-                        fill="white" />
-                </svg>
-
-            </div>
-        </div>
-        <div>
-            <div>
-                <h5>Company</h5>
-                <nav>
-                    <ul>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact us</a></li>
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">Testimonials</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div>
-                <h5>Support</h5>
-                <nav>
-                    <ul>
-                        <li><a href="#">Help center</a></li>
-                        <li><a href="#">Terms of service</a></li>
-                        <li><a href="#">Legal</a></li>
-                        <li><a href="#">Privacy policy</a></li>
-                        <li><a href="#">Status</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div>
-                <h5>Stay up to date</h5>
                 <div>
-                    <input type="text" placeholder="Your email address">
+                    <h5>Stay up to date</h5>
+                    <div>
+                        <input type="text" placeholder="Your email address">
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 </body>
 
 </html>

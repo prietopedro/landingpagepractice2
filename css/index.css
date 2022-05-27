@@ -1,0 +1,207 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+body {
+    font-family: 'Inter';
+}
+
+.main-button {
+    background: rgb(58, 65, 164);
+    background: linear-gradient(90deg, rgba(58, 65, 164, 1) 0%, rgba(24, 29, 94, 1) 100%);
+    border: none;
+    color: white;
+}
+
+.secondary-button {
+    background: white;
+    border: 2px solid black;
+    color: black;
+}
+
+.logo {
+    font-weight: bold;
+}
+
+.top-nav {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 50%;
+    background: white;
+    z-index: 999;
+    text-transform: uppercase;
+    transform: translateX(100%);
+    transition: transform .5s ease-in-out;
+}
+
+.top-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 8em;
+}
+
+.top-nav ul a {
+    color: rgb(53, 53, 53);
+    padding: .75em 2em;
+    display: block;
+    width: 100%;
+}
+
+.top-nav ul a:hover {
+    color: rgb(53, 53, 53);
+    padding: .75em 2em;
+    display: block;
+    width: 100%;
+    background: gray;
+}
+
+.tip-nav .close {
+    float: right;
+    margin: 2em;
+    width: 2.5em;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+header svg {
+    width: 2.1em;
+    margin-top: -.6em;
+    cursor: pointer;
+    stroke: black;
+}
+
+header svg path {
+    fill: black;
+}
+
+.header-wrapper {
+    margin: 0 1em 3em 1em;
+}
+
+h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.9rem;
+}
+
+h1 span {
+    color: #D843A9
+}
+
+.header p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: black;
+}
+
+.cta {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 2em 0;
+}
+
+.cta button {
+    width: 48%;
+    padding: 0.5em 0;
+}
+
+.header-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-footer div .header-footer-title {
+    font-size: 2rem;
+    font-style: bold;
+    font-weight: 600;
+}
+
+.header-wrapper .cards {
+    display: none;
+}
